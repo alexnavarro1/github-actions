@@ -7,7 +7,6 @@ import pytest
     [
         (biblioteca, "fantasia", ['El Senyor dels Anells']),  # Ha de retornar una llista amb el llibre de fantasia. Sortira (.)
         (biblioteca, "ciència-ficció", ['1984']),  # Ha de retornar una llista amb el llibre de ciència-ficció. Sortira (.)
-        (biblioteca, "novel·la", ['1984', 'El Senyor dels Anells'])  # Test amb resultat esperat incorrecte. Sortira (F)
     ]
 )
 def test_llibres_per_categoria(dades, categoria, resultat):
@@ -28,7 +27,6 @@ def test_llibres_per_categoria(dades, categoria, resultat):
     [
         (biblioteca, "El Senyor dels Anells", False),  # El llibre no està disponible. Sortira (.)
         (biblioteca, "Crim i Càstig", True),  # El llibre està disponible. Sortira (.)
-        (biblioteca, "El Quixot", True)  # Test amb resultat esperat incorrecte. Sortira (F)
     ]
 )
 def test_esta_disponible(dades, llibre, resultat):
@@ -48,7 +46,6 @@ def test_esta_disponible(dades, llibre, resultat):
     [
         (biblioteca, "Anna", False),  # L'usuari no té préstecs.
         (biblioteca, "Marta", True),  # L'usuari té préstecs.
-        (biblioteca, "Marta", False)  # Test amb resultat esperat incorrecte. Sortira (F)
     ]
 )
 def test_usuari_te_prestecs(dades, usuari, resultat):
@@ -68,7 +65,6 @@ def test_usuari_te_prestecs(dades, usuari, resultat):
     [
         (biblioteca, "El Quixot", 47),  # Dies totals de prestec per a El Quixot. Sortira (.)
         (biblioteca, "1984", 53),  # Dies totals de prestec per a 1984. Sortira (.)
-        (biblioteca, "1984", 70)  # Test amb resultat esperat incorrecte. Sortira (F)
     ]
 )
 def test_dies_prestec_total(dades, llibre, resultat):
