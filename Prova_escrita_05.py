@@ -131,19 +131,10 @@ def dies_prestec_total(biblioteca, llibre):
             return total
     return total    
 def main():
-    # exercici 1
-    print(llibres_per_categoria(biblioteca, "novel·la"))
-
-    
-    # exercici 2
-    print(esta_disponible(biblioteca, "El Senyor dels Anells"))
-    
-    # exercici 3
-    print(usuari_te_prestecs(biblioteca, "Pere"))
-
-
-    # exercici 4
-    print(dies_prestec_total(biblioteca, "El Senyor dels Anells"))  
+    print(llibres_per_categoria(biblioteca, "novel·la"))          
+    print(esta_disponible(biblioteca, "El Quixot"))               
+    print(usuari_te_prestecs(biblioteca, "Marta"))                
+    print(dies_prestec_total(biblioteca, "Crim i Càstig"))
 
 if __name__ == "__main__":
     main()
